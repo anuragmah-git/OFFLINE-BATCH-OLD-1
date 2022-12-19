@@ -38,7 +38,7 @@ Creating remote repository in github
 	URL: https://github.com
 
 2. login github.com with your credentials. 	
-	click on "new repository" --> "create reopository" 
+     	click on "new repository" --> "create reopository" 
 
 3. copy the repo URL from Github:
 	https://github.com/swapnilmahajan-git/REPO-NAME.git
@@ -87,58 +87,4 @@ $ git config --list
 
 Git stores all configurations in below file
 "cd /home/swapnil/.gitconfig"
-
-
-=========
-Phase-3
-=========
-# Understand Git Jargon.
-	- Remote Repository --- github server
-	- Working Directory ---- (.)
-	- Local Repository  ----- (.git)
-	- Stage/"Staging Index" ---- (..)
-
-
-#It is remote repo url for clone the files.
-	$ git remote -v
- 
-#If you want downlod remote repository then apply this commnad (It is first time activity).
-	$ git clone <repo-url>
-
-#If you want to download modified content from remote repo then apply this command, after git pull your modified changes comes in source area.
-	$ git pull
-
-#If you want to download modified content from remote repo then apply this command, But you dont want to merge modified content in your source area then apply this command
-	$ git fetch
-
-# Skip staging
-	git commit -am "submit all pending changes"
-
-# Creating up Local repository
-1. create/initialize a local repository with 'git init' command
-	$ mkdir <create-folder>
-	$ cd <folder-name>
-	$ git init
-(Note - Create same folder name repositry in the github server)
-	$ git remote add <folder-name> <repo-url>
-	$ git push <folder-name>
-	$ git push --set-upstream <folder-name> master
-
-
-
-2. Observe the local repository
-	$ ls -a 
-
-3.create some source code.. ex: vim Login.java
-
-4.Adding the file to STAGE.
-	$ git add <filename>
-
-5.Commiting the file to local repository
-	$ git commit <filename> -m "lgoin module code"
-
-6.Check the log of Login.java using log command.
-	$ git log <filename>
-
-
 
