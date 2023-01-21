@@ -43,4 +43,56 @@ Verify Installation
 	$ java -version
 	$ mvn --version or mvn -v
 
+============
+Phase-2
+============
+
+#5 TEST YOUR KOWLEDGE
+	- Build and Deployment E2E work-flow and basics
+	- What is compilation & why we compile the source code
+	- Packaging sequence for Java application
+	- What is Build
+	- What is Deployment
+	- Environment
+	- Dev, QA & DevOps teams Interaction and Collaboration.
+
+#6
+Maven's standard project layout
+=================================
+Project creation:
+-----------------
+java projects which are created by maven, ideally follows below project folder structure.
+	
+		flipkart
+			|
+			src		pom.xml
+			|
+	main--------- test
+	|				|
+   java		       java
+	|				|
+  (group .Id)	  (group.Id)
+	|				|
+App.java		AppTest.java
+
+
+flipkart - is called "Project name" / "ArtifactID"
+src 	 - Source folder which contains the 
+				application source code
+main	 - Contains application's main functional code
+test	 - Contains application's unit testing code
+pom.xml  - Maven's build file using which we can
+				configure build steps such as 
+				compilation, test runs, jar/war creation,
+				deployments...etc.
+
+
+#7
+Creating a Java Project using Maven: (It is for standlone project)
+
+$ mvn archetype:generate -DgroupId=com.amazon -DartifactId=amazon -Dversion=1.0-SNAPSHOT -DinteractiveMode=false
+(Note :- For creating Maven project we need GAV parameter).
+
+
+
 
